@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model CsvFile {
+  id           Int           @id @default(autoincrement())
+  fileName     String        @unique
+  rowCount     Int
+  columns      String
+  createdAt    DateTime      @default(now())
+  fileSize  Int?
+  data         CsvData[]     @relation("CsvFileToData")
+}
+
+model CsvData {
+  id        Int      @id @default(autoincrement())
+  rowData   Json
+  createdAt DateTime @default(now())
+  csvFileId Int
+  csvFile   CsvFile  @relation("CsvFileToData", fields: [csvFileId], references: [id], onDelete: Cascade)
+  @@index([csvFileId])
+}
