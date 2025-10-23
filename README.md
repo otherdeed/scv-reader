@@ -1,75 +1,24 @@
-# Nuxt Minimal Starter
+# SCV Project
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Проект на основе Nuxt 4 с использованием современного стека технологий.
 
-## Setup
+## О проекте
 
-Make sure to install dependencies:
+test project - это веб-приложение в котором можно сохранять и читать scv файлы, построенное на современном стеке технологий:
 
-```bash
-# npm
-npm install
+- **Frontend**: Nuxt 4 с Vue 3
+- **UI**: Nuxt UI
+- **Стили**: Tailwind CSS
+- **База данных**: Prisma ORM
+- **Язык**: TypeScript
 
-# pnpm
-pnpm install
+## Требования
 
-# yarn
-yarn install
+- Node.js 18+ 
+- Yarn 
 
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+### Быстрый запуск (одной командой)
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+make run
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
